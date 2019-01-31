@@ -33,3 +33,5 @@ wget https://ftp.gnu.org/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.gz
 tar -xvf gcc-8.2.0.tar.gz
 cd gcc-8.2.0
 ./configure --disable-multilib && make -j 40 && sudo make install
+
+rm -rf /tmp/setup-gcc
