@@ -30,7 +30,4 @@ sudo sed -i -e 's/# OS.EnableRDMA=y/OS.EnableRDMA=y/g' /etc/waagent.conf
 sudo sed -i -e 's/AutoUpdate.Enabled=y/# AutoUpdate.Enabled=y/g' /etc/waagent.conf
 sudo systemctl restart waagent
 
-# disable firewall
-sudo systemctl stop firewalld
-
 rm -rf /tmp/setupnode
