@@ -4,9 +4,6 @@ set -ex
 # Update memory limits, set hpcuser access
 sudo ./update_config.sh
 
-# Setup ssh
-./setup_ssh.sh
-
 # Install development tools
 ./install_dev_tools.sh
 
