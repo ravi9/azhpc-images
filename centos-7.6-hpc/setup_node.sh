@@ -17,6 +17,6 @@ sudo ./install_gcc-8.2.sh
 sudo ./install_mpi.sh
 
 # Setup environment modules for MPI libraries
-sudo mkdir -p /usr/share/Modules/mpi/
-sudo cp ./modulefiles/* /usr/share/Modules/mpi/
+sudo mkdir -p /usr/share/Modules/modulefiles/mpi/
+sudo cp ./modulefiles/* /usr/share/Modules/modulefiles/mpi/
 
