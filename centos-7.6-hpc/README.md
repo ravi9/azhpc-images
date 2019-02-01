@@ -3,7 +3,6 @@
 The script installs/sets up the following:
 
 - Update memory limits
-- Update ssh config
 - Enable `zone_reclaim` mode
 - Install Development tools and pre-reqs for MPI installations
 - Install Mellanox OFED
