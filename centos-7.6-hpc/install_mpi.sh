@@ -14,8 +14,6 @@ tar -xvf mvapich2-2.3.tar.gz
 cd mvapich2-2.3
 ./configure --prefix=${INSTALL_PREFIX}/mvapich2-2.3 --enable-g=none --enable-fast=yes && make -j 40 && make install
 cd ..
-rm -rf mvapich2-2.3.tar.gz
-
 
 # UCX 1.5.0 RC1
 wget https://github.com/openucx/ucx/releases/download/v1.5.0-rc1/ucx-1.5.0.tar.gz
@@ -23,8 +21,6 @@ tar -xvf ucx-1.5.0.tar.gz
 cd ucx-1.5.0
 ./contrib/configure-release --prefix=${INSTALL_PREFIX}/ucx-1.5.0 && make -j 40 && make install
 cd ..
-rm -rf ucx-1.5.0.tar.gz
-
 
 # HPC-X v2.3.0
 cd ${INSTALL_PREFIX}
@@ -41,8 +37,6 @@ tar -xvf openmpi-4.0.0.tar.gz
 cd openmpi-4.0.0
 ./configure --prefix=${INSTALL_PREFIX}/openmpi-4.0.0 --with-ucx=${INSTALL_PREFIX}/ucx-1.5.0 --enable-mpirun-prefix-by-default && make -j 40 && make install 
 cd ..
-rm -rf openmpi-4.0.0.tar.gz
-
 
 # MPICH 3.3
 wget http://www.mpich.org/static/downloads/3.3/mpich-3.3.tar.gz
@@ -50,6 +44,5 @@ tar -xvf mpich-3.3.tar.gz
 cd mpich-3.3
 ./configure --prefix=${INSTALL_PREFIX}/mpich-3.3 --with-ucx=${INSTALL_PREFIX}/ucx-1.5.0 --with-hcoll=${HCOLL_PATH} --enable-g=none --enable-fast=yes --with-device=ch4:ucx   && make -j 8 && make install 
 cd ..
-rm -rf mpich-3.3.tar.gz
 
-rm -rf /tmp/mpi
+cd && rm -rf /tmp/mpi

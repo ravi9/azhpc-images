@@ -2,10 +2,9 @@
 #
 #  HPCx 2.3.0
 #
-
-conflict	mpi
-prepend-path	PATH            /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64/ompi/bin
-prepend-path	PATH            /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64
+conflict        mpi
+prepend-path    PATH            /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64/ompi/bin
+prepend-path    PATH            /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64
 prepend-path    LD_LIBRARY_PATH /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64/ompi/lib
 prepend-path    MANPATH         /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64/ompi/share/man
 setenv          MPI_BIN         /opt/hpcx-v2.3.0-gcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-x86_64/ompi/bin

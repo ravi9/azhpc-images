@@ -2,8 +2,15 @@
 set -ex
 
 # Install pre-reqs and development tools
-sudo yum groupinstall -y "Development Tools"
-sudo yum install -y numactl numactl-devel libxml2-devel byacc environment-modules
-sudo yum install -y python-devel redhat-rpm-config rpm-build
-sudo yum install -y gtk2 atk cairo tcl tk createrepo emacs
+yum groupinstall -y "Development Tools"
+yum install -y numactl numactl-devel libxml2-devel byacc environment-modules
+yum install -y python-devel redhat-rpm-config rpm-build
+yum install -y gtk2 atk cairo tcl tk createrepo emacs
+
+yum install -y python-devel
+yum install -y redhat-rpm-config rpm-build gcc-gfortran gcc-c++
+yum install -y gtk2 atk cairo tcl tk createrepo wget
+KERNEL=$(uname -r)
+yum install -y kernel-devel-${KERNEL}
+yum install -y m4 libgcc.i686 glibc-devel.i686
 

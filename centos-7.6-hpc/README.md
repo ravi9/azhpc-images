@@ -5,8 +5,8 @@ The script installs/sets up the following:
 - Update memory limits
 - Enable `zone_reclaim` mode
 - Install Development tools and pre-reqs for MPI installations
-- Install Mellanox OFED
-- Install WALinuxAgent
+- Install Mellanox OFED (4.5-1.0.1.0-rhel7.6-x86_64)
+- Install WALinuxAgent (2.2.36)
 - Setp IPoIB
 - Install gcc v8.2
 - Install MPI Libraries as modules
