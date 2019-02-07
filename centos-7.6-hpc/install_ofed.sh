@@ -17,6 +17,7 @@ cd && rm -rf /tmp/mlnxofed
 
 # Install WALinuxAgent
 mkdir -p /tmp/wala
+cd /tmp/wala
 wget https://github.com/Azure/WALinuxAgent/archive/v2.2.36.tar.gz
 tar -xvf v2.2.36.tar.gz
 cd WALinuxAgent-2.2.36
