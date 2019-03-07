@@ -13,8 +13,11 @@ set -ex
 # Install gcc 8.2
 ./install_gcc-8.2.sh
 cp ./modulefiles/gcc-8.2.0 /usr/share/Modules/modulefiles/
-source ~/.bashrc
-module load gcc-8.2.0
+
+export PATH=/opt/gcc-8.2.0/bin:$PATH
+export LD_LIBRARY_PATH=/opt/gcc-8.2.0/lib64:$LD_LIBRARY_PATH
+export CC=/opt/gcc-8.2.0/bin/gcc
+export GCC=/opt/gcc-8.2.0/bin/gcc
 
 # Install MPI libraries and Communication Runtimes
 ./install_mpi.sh

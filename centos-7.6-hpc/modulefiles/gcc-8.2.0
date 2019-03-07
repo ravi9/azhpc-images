@@ -3,7 +3,7 @@
 #  GCC 8.2.0
 #
 
-prepend-path    PATH            /usr/local/bin
-prepend-path    LD_LIBRARY_PATH /usr/local/lib64
-setenv          CC              /usr/local/bin/gcc
-setenv          GCC             /usr/local/bin/gcc
+prepend-path    PATH            /opt/gcc-8.2.0/bin
+prepend-path    LD_LIBRARY_PATH /opt/gcc-8.2.0/lib64
+setenv          CC              /opt/gcc-8.2.0/bin/gcc
+setenv          GCC             /opt/gcc-8.2.0/bin/gcc
