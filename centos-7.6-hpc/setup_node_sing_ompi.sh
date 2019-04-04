@@ -18,6 +18,9 @@ export LD_LIBRARY_PATH=/opt/gcc-8.2.0/lib64:$LD_LIBRARY_PATH
 export CC=/opt/gcc-8.2.0/bin/gcc
 export GCC=/opt/gcc-8.2.0/bin/gcc
 
+#Install Singularity
+./install_singularity.sh
+
 # Install UCX1.5 and OPENMPI4.0 libraries
 ./install_ucx_ompi.sh
 
@@ -29,5 +32,3 @@ export MPI_INCLUDE=/opt/openmpi-4.0.0/include
 export MPI_LIB=/opt/openmpi-4.0.0/lib
 export MPI_MAN=/opt/openmpi-4.0.0/share/man
 export MPI_HOME=/opt/openmpi-4.0.0
-
-./install_singularity.sh
