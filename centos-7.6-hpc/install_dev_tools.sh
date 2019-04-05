@@ -6,6 +6,7 @@ yum install -y epel-release
 yum install -y git wget
 yum groupinstall -y "Development Tools"
 yum install -y numactl numactl-devel libxml2-devel byacc environment-modules
+yum install pciutils lsof ethtool libnl3 libmnl tcsh
 yum install -y python-devel python-setuptools
 yum install -y gtk2 atk cairo tcl tk
 yum install -y gcc-gfortran gcc-c++
