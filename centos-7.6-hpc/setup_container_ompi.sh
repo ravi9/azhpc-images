@@ -2,7 +2,7 @@
 set -ex
 
 # Update memory limits
-#./update_config.sh
+./update_config.sh
 
 # Install development tools
 ./install_dev_tools.sh
